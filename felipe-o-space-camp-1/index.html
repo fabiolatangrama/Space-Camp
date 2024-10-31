@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Felipe Oviedo</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+  
+
+<body>
+  <div id="titulo">
+    <h2> mi experiencia en </h2>
+    <h1>space  camp</h1>
+    <img src="cohete.png" id="cohete">
+  </div>
+
+  
+  <div id="mi_experiencia">
+    <div id="col1">
+      <h1 id="titulo_experiencia" style="color:black"></h1>
+      <p style="color:black">mi experencia en el space camp</p>
+    </div>
+
+    <div id="col2">
+     
+
+    </div>
+
+
+  </div>
+<center>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3279.758766558332!2d-86.65429932365359!3d34.711263972916015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88626dde1761871b%3A0x82163160a2af79f9!2sSpace%20Camp!5e0!3m2!1ses-419!2scr!4v1720195030935!5m2!1ses-419!2scr" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </center>
+  <h4> asi fue el space camp</h4>
+
+
+  <div class="month">      
+    <ul>
+      <li>
+        Setiembre<br>
+        <span style="font-size:18px">2024</span>
+      </li>
+    </ul>
+  </div>
+
+  <ul class="weekdays">
+    <li>Lunes</li>
+    <li>Martes</li>
+    <li>Miércoles</li>
+    <li>Jueves</li>
+    <li>Viernes</li>
+    <li>Sábado</li>
+    <li>Domingo</li>
+  </ul>
+
+  <ul class="days">  
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+    <li>6</li>
+    <li>7</li>
+    <li>8</li>
+    <li>9</li>
+    <li>10</li>
+    <li>11</li>
+    <li>12</li>
+    <li>13</li>
+    <li><span data-bs-toggle="modal" data-bs-target="#myModal" onclick="calendario(this)" class="active">14</span></li>
+    <li><span data-bs-toggle="modal" data-bs-target="#myModal" onclick="calendario(this)" class="active2">15</span></li>
+    <li><span data-bs-toggle="modal" data-bs-target="#myModal" onclick="calendario(this)" class="active">16</span></li>
+    <li><span data-bs-toggle="modal" data-bs-target="#myModal" onclick="calendario(this)" class="active2">17</span></li>
+    <li><span data-bs-toggle="modal" data-bs-target="#myModal" onclick="calendario(this)" class="active">18</span></li>
+    <li><span data-bs-toggle="modal" data-bs-target="#myModal" onclick="calendario(this)" class="active2">19</span></li>
+    <li><span data-bs-toggle="modal" data-bs-target="#myModal" onclick="calendario(this)"class="active">20</span></li>
+    <li><span data-bs-toggle="modal" data-bs-target="#myModal" onclick="calendario(this)"class="active2">21</span></li>
+    <li>22</li>
+    <li>23</li>
+    <li>24</li>
+    <li>25</li>
+    <li>26</li>
+    <li>27</li>
+    <li>28</li>
+    <li>29</li>
+    <li>30</li>
+  </ul>
+
+  <!-- The Modal -->
+  <div class="modal" id="myModal">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">14 de setiembre de 2024</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+          <p class="text-calendar">Esta es una pequeña descripción de lo que hicimos ese día.</p>
+          <img class="img-calendar img-fluid" src="">
+        </div>
+
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+  <br><br>
+  <h2>Pon a prueba tu conocimiento: </h2>
+
+  <form class="m-5">
+    <label> 1. ¿Cuál es el nombre de nuestra galaxia?</label> <br>
+
+    <input type="radio" name="p1" value="via">Vía Láctea <br>
+    <input type="radio" name="p1" value="proxima">Próxima Centauri <br>
+    <input type="radio" name="p1" value="andromeda">Andrómeda <br>
+
+    <label> 2. ¿Cual es el planeta mas grade del sistema solar?</label> <br>
+
+    <input type="radio" name="p2" value="mercurio">Mercurio<br>
+    <input type="radio" name="p2" value="marte">Marte <br>
+    <input type="radio" name="p2" value="jupiter">Júpier<br>
+
+    <label> 3. ¿Cómo se llamó el primer hombre en la luna?</label> <br>
+
+    <input type="radio" name="p3" value="nelson">Nelson Mandela<br>
+    <input type="radio" name="p3" value="neil"> Neil Armstrong <br>
+    <input type="radio" name="p3" value="obama">Michael Obama<br>
+
+  </form>
+
+  <button onclick="revisar()"> Revisar </button>
+
+  
+<script src="script.js"></script>
+</body>
+
+</html>
