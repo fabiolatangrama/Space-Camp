@@ -1,0 +1,33 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+h1 {
+  background-color: #000000;
+  color: red;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: Grandstander;
+  font-size: 50px;
+}
+h2 {
+  color:#9fe8d4;
+  text-align: center;
+}
+
+
+
+table {
+  border: 10px solid #307ba9;
+  background-color:  #99c9e6 ;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  border-spacing: 14px;
+  font-size: 12px;
+}
+
+thead {
+  font-size: 18px;
+  color: #c2dbea ;
+}

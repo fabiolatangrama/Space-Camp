@@ -1,0 +1,79 @@
+h2{
+   color: white;
+      font-family:'Arial Black';
+   text-align: center;
+   font-size: 30px;
+
+}
+
+h3{
+   color: #ffffff!important;
+   font-family:'Franklin Gothic Heavy';
+   text-align: center;
+   font-size: 54px;
+}
+
+h1{
+   color: white;
+   font-family:'Franklin Gothic Heavy';
+   font-size: 20px;
+
+}
+
+h4{
+   font-family: 'Showcard Gothic' ;
+}
+
+#header{
+   /* background-image: linear-gradient(black, #35355a);*/
+   background-image: url(cielo.jpg);
+
+   padding: 20px;
+
+}
+
+
+#cohete{
+   animation-name: cohete;
+   animation-duration: 10s;
+   animation-iteration-count: infinite;
+   position: relative;
+   transform: rotate(45deg);
+}
+
+#cometa{
+   animation-name: cometa;
+   animation-duration: 3s;
+   animation-iteration-count: infinite;
+   position: relative;
+   transform: rotate(0deg)
+
+}
+
+@keyframes letras{
+   0%{
+      font-size: 45px;
+   }
+   100%{
+     font-size: 60px;
+   }
+}
+@keyframes cohete{
+      0%{left : 0vw}
+    100%{left : 100vw}
+
+   }
+@keyframes cometa{
+  0%{left :100vw}
+   100%{left : -20vw}
+
+}
+
+
+    
+table, th, td{
+      border: 2px solid #71549c;
+      border-collapse: collapse;
+      text-align: center;
+      padding: 8px;
+}

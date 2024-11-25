@@ -1,0 +1,80 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+#Titulo{
+  h1 {
+  
+    color:white;
+    text-align: center;
+    text-decoration: underline;
+    text-transform: uppercase;
+    text-transform: lowercase;
+    text-transform: capitalize;
+    font: Papyrus;
+    line-height: 1;
+  }
+  h2 {
+    color: white;
+    text-align: center;
+  }
+
+}
+
+#Titulo{
+  background-image: linear-gradient(purple, #840b84, #101065);
+}
+  #content1{
+    background-color: green;
+ }
+
+#column1{
+  float:left;
+  line-height: 0.5;
+  h3{
+    text-align: center;
+  }
+}
+
+#NOW{
+  position: relative;
+  animation-name: move;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+}
+
+@keyframes move {
+  0%{
+    left:0;
+  }
+  100%{
+    left:100%;
+  }
+}
+
+table{
+  border: 5px solid black;
+  background-color: #aedbea;
+  color: black;
+  cursor: pointer;
+  border-spacing: 0px;
+  border-collapse: seperate;
+}
+
+thead{
+  font-size: 20px;
+}
+
+tfoot{
+  font-size: 13px;
+}
+
+td{
+  padding: 3px solid black;
+  border: 2px solid black;
+}
+
+#Mapa{
+  text-align:center;
+}
+
