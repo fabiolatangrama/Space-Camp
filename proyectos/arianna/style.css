@@ -1,0 +1,92 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: Grandstander;
+  font-size: 50px;
+  line-height: 0;
+}
+
+h2 {
+  color: white;
+  text-align: center;
+  font-family: Grandstander;
+}
+
+h3{
+  font-family: Grandstander;
+  text-align: center;
+}
+p {
+  color: black;
+   text-align: center;
+}
+
+li {
+  color: pink;
+  text-decoration-line: underline;
+}
+
+a {
+  color: red;
+  text-decoration: none;
+  text-shadow: 1px 2px blue;
+}
+
+
+
+#titulo{
+  /*background-image: linear-gradient(#f988b3, #c489f3);*/
+  background-image: url("Space\ 1.webp");
+  background-size: cover;
+  background-position: center;
+  padding: 25px;
+  color: white;
+}
+
+#contenido1{
+  background-color: #f1f1f5;
+  display: table;
+  width: 100vw;
+}
+#col1{
+  width: 50%;
+  float: left;
+}
+#col2{
+  width: 50%;
+  float: left;
+}
+
+
+#cohete {
+  transform: rotate(45deg);
+  position: relative;
+  animation-name: mover;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes mover{
+  0%{
+    left: 0;
+
+  }
+  100%{
+    left: 100vw;
+
+
+  }
+}
+
+
+table, th, td{
+  border: 2px solid #76e5cf;
+  border-collapse: collapse;
+  padding: 20px;
+}
