@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap');
+
+h2 
+{
+  color: white;
+  font-family: "Protest Strike", sans-serif;
+  text-align: center;
+}
+
+#header{
+  padding: 20px;
+  height: 250px;
+  font-size: 15px;
+  background-image: url("Webb.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  Color: #FFFFFF
+}
+h1 
+{
+color: white;
+font-family: "Protest Strike", sans-serif;
+font-size: 50px;
+text-align: center;
+animation-name: color;
+animation-duration: 3s;
+animation-iteration-count: infinite;
+}
+h2
+{
+  color: white;
+  font-family: 'Protest Strike';
+  font-size: 50px;
+  text-align: center;
+  animation-name: color;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  }
+
+#cohete{
+  transform: rotate(45deg);
+  position: relative;
+  animation-name:mover;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+#estrella{
+  position: relative;
+  animation-name:agrandar;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+#planeta{
+  position: relative;
+  animation-name:rotar;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes rotar{
+  0%{  transform: rotate(0deg); }
+  100%{ transform: rotate(180deg);}
+}
+@keyframes agrandar{
+  0%{  height: 100px; }
+  50%{  height: 50px; }
+  100%{ height: 100px; }
+}
+
+@keyframes mover{
+  0%{left: 0;}
+  100%{left: 80vw}
+}
+
+@keyframes color{
+  0%{color: #03c2fc;}
+  20%{color: #038cfc;}
+  40%{color: #034efc;}
+  60%{color: #0703fc;}
+  80%{color: #4a03fc;}
+  95%{color: #a103fc;}
+  100%{color: #03c2fc;}
+}
+@keyframes size{
+  0%{font-size: 25px;}
+  100%{font-size: 65px;}
+}
+@keyframes fuente{
+  0%{font-family: 'Cosmic Blaster';}
+  25%{font-family: 'gameovercre';}
+  50%{font-family: 'Gamelia';}
+  75%{font-family: 'Happy School';}
+  100%{font-family: 'Game Robot';}
+}
+
+
+
+table, th, td{
+  border: 2px solid #16015c;
+  border-collapse: collapse;
+  padding: 20px;
+}
+body {
+  background-color: #f0f0f0!important; 
+}
+.container {
+  background-color: #e0e0e0; 
+}

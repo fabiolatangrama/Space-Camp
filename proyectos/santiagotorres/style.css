@@ -1,0 +1,249 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: Grandstander;
+  font-size: 50px;
+  line-height: 0;
+}
+
+h2 {
+  color: white;
+  text-align: center;
+  font-family: Grandstander;
+}
+
+h3{
+  font-family: Grandstander;
+  text-align: center;
+}
+p {
+  color: black;
+   text-align: center;
+}
+
+li {
+  color: pink;
+  text-decoration-line: underline;
+}
+
+a {
+  color: red;
+  text-decoration: none;
+  text-shadow: 1px 2px blue;
+}
+
+
+
+#titulo{
+  /*background-image: linear-gradient(#f988b3, #c489f3);*/
+  background-image: url("universo.jpeg");
+  background-size: cover;
+  padding: 25px;
+}
+
+#contenido1{
+  background-color: lightskyblue;
+  display: table;
+}
+#col1{
+  width: 50%;
+  float: left;
+}
+#col2{
+  width: 50%;
+  float: left;
+}
+
+
+#cohete{
+  transform: rotate(87deg);
+  position: relative;
+  animation-name: mover;
+  animation-duration: 65s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes mover{
+  0%{
+    left: 0;
+    top: 0;
+  }
+  100%{
+    left: 100vw;
+    top: 50px;
+
+  }
+}
+table{border:  10px solid  #ECEDA2; background-color:#B9BC0B; box-shadow: 5px #eceda2; cursor: not-allowed; border-spacing: 0px ; border-collapse: separate; }
+td{border: 1px solid black;  }
+thead{font-size: 20px; color:#66680C ; }
+h3{
+  color: greenyellow;
+  text-align: center;
+  font-family: Grandstander;
+}
+
+ul {list-style-type: none;}
+
+.month {
+  padding: 70px 25px;
+  width: 100%;
+  background-image:url("pollo.png");
+  text-align: center;
+}
+
+.month ul {
+  margin: 0;
+  padding: 0;
+}
+
+.month ul li {
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.month .prev {
+  float: left;
+  padding-top: 10px;
+}
+
+.month .next {
+  float: right;
+  padding-top: 10px;
+}
+
+.weekdays {
+  margin: 0;
+  padding: 10px 0;
+  background-color: #ddd;
+}
+
+.weekdays li {
+  display: inline-block;
+  width: 13.6%;
+  color: #666;
+  text-align: center;
+}
+
+.days {
+  padding: 10px 0;
+  background: #eee;
+  margin: 0;
+}
+
+.days li {
+  list-style-type: none;
+  display: inline-block;
+  width: 13.6%;
+  text-align: center;
+  margin-bottom: 5px;
+  font-size:12px;
+  color: #777;
+}
+
+.days li .active {
+  padding: 5px;
+  background: #1abc9c;
+  color: white !important
+}
+
+/* Add media queries for smaller screens */
+@media screen and (max-width:720px) {
+  .weekdays li, .days li {width: 13.1%;}
+}
+
+@media screen and (max-width: 420px) {
+  .weekdays li, .days li {width: 12.5%;}
+  .days li .active {padding: 2px;}
+}
+
+@media screen and (max-width: 290px) {
+  .weekdays li, .days li {width: 12.2%;}
+}
+ul {list-style-type: none;}
+
+.month {
+  padding: 70px 25px;
+  width: 100%;
+  background-image:url("pollo.png");
+  text-align: center;
+}
+
+.month ul {
+  margin: 0;
+  padding: 0;
+}
+
+.month ul li {
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.month .prev {
+  float: left;
+  padding-top: 10px;
+}
+
+.month .next {
+  float: right;
+  padding-top: 10px;
+}
+
+.weekdays {
+  margin: 0;
+  padding: 10px 0;
+  background-color: #ddd;
+}
+
+.weekdays li {
+  display: inline-block;
+  width: 13.6%;
+  color: #666;
+  text-align: center;
+}
+
+.days {
+  padding: 10px 0;
+  background: #eee;
+  margin: 0;
+}
+
+.days li {
+  list-style-type: none;
+  display: inline-block;
+  width: 13.6%;
+  text-align: center;
+  margin-bottom: 5px;
+  font-size:12px;
+  color: #777;
+}
+
+.days li .active {
+  padding: 5px;
+  background: #1abc9c;
+  color: white !important
+}
+
+/* Add media queries for smaller screens */
+@media screen and (max-width:720px) {
+  .weekdays li, .days li {width: 13.1%;}
+}
+
+@media screen and (max-width: 420px) {
+  .weekdays li, .days li {width: 12.5%;}
+  .days li .active {padding: 2px;}
+}
+
+@media screen and (max-width: 290px) {
+  .weekdays li, .days li {width: 12.2%;}
+}
