@@ -1,0 +1,44 @@
+h1 {
+ color: white;
+  text-align: center;
+  font-size: 50px;
+  animation-name:letras;
+  animation-duration:1s;
+  animation-iteration-count: infinite
+}  
+#header{
+  /*background-image: linear-gradient(black,purple,darkviolet,blue);*/
+  background-image: url("space camp imagen 1.png");
+  padding:28px;
+
+}
+#meteorito{
+   animation-name:meteorito;
+  animation-duration:2s;
+   animation-iteration-count: infinite ;
+  position:relative;
+  transform: rotate(25deg);
+}
+@keyframes letras{
+  0%{
+    color: white
+  }
+  100%{
+    color: black
+  }
+}
+@keyframes meteorito{  
+0%{left: 100vw}
+100%{left: 0vw}
+}
+
+table, th, td{
+  border: 2px solid black;
+  border-collapse: collapse;
+  padding: 10px;
+  text-align: center;
+}
+th{
+  background-color: lightblue;
+}
+

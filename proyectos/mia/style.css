@@ -1,0 +1,38 @@
+h1{
+  color: green!important;
+  text-align: center;
+  font-family: 'Showcard Gothic';
+  font-size: 50px;
+ 
+  animation-name: letras;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+h2{
+  color: green!important;
+  text-align: center;
+}
+#mia{
+background-image: url("estrella spae camp.avif")
+}
+#gato{
+  animation-name: asteroide;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  position: relative;
+}
+  @keyframes letras{
+    0%{
+      font-size:50px;
+    }
+    100%{
+       font-size:80px;
+    }
+  }
+
+@keyframes asteroide {
+  0%{left: 100vw}
+  100%{left: 0vw }
+}
+
+

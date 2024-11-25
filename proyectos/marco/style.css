@@ -1,0 +1,51 @@
+h1
+{
+ color: blue;
+  font-family: 'Cosmic Blaster';
+  font-size: 50px;
+  text-align: center;
+  animation-name:color;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+h2
+{
+  color: purple;
+  font-family: 'Cosmic Blaster';
+  font-size: 44px;
+  text-align: center;
+}
+
+#header{
+  background-image: url("space.jpg");
+  /*padding 110px;*/
+  height: 250px;
+  }
+
+@keyframes color{
+  0%{color: #b64949;}
+  50%{color: #a8a85c;}
+  100%{color: turquoise;}
+  
+}
+
+@keyframes size{
+  0%{font-size: 25px;}
+  100%{font-size: 65px;}
+
+}
+@keyframes mover{
+  0%{left: 0;}
+  100%{left: 80vw}
+}
+
+#cohete{
+  transform: rotate(43deg);
+  position: relative;
+  animation-name:mover;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+
