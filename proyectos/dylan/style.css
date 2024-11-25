@@ -1,0 +1,70 @@
+#contenido1{
+  background-color: #f1f1f5;
+  display: table;
+  width: 100vw;
+}
+#col1{
+  width: 50%;
+  float: left;
+}
+#col2{
+  width: 50%;
+  float: left;
+}
+label{
+  Font-family : 'Cooper Black';
+}
+h1
+{
+Font-family : 'Cooper Black';
+color: #ff5140;
+background-color: blue;
+  animation-name:color;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+h2
+{
+Color: #ff7b00;
+Font-family : 'Cooper Black';
+}
+#header{
+background-image:linear-gradient(red,blue,green) ;
+  padding:30px; 
+  text-align: center;
+}
+
+#cohete{
+transform:rotate(45deg);
+  position: relative;
+  animation-name:mover;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+
+@keyframes mover{
+0%{left:0 ;}
+100%{left:85vw}
+}
+@keyframes color{
+0%{color:red;}
+100%{color:blue;}
+  
+}
+@keyframes size{
+0%{font-size:10px;}
+100%{font-size:30px;}
+  
+}
+@keyframes fuente{
+0%{font-family: 'Cooper Black';}
+100%{font-family: 'Cosmic Blaster';}
+}
+
+table, th, td{
+  border: 2px solid #76e5cf;
+  border-collapse: collapse;
+  padding: 20px;
+}

@@ -1,0 +1,118 @@
+h1{
+color:black;
+  
+  font-family:'showcard gothic';
+  text-align: center;
+  font-size: 25px;
+}
+h2{ color: #000000}
+h3{color: #40443c}
+h4{color:black}
+
+
+#lin{
+  /*background-image:linear-gradient(grey,  #1a1a47);*/
+  background-image: url("cielo-nubes-blancas_23-2148824914.avif");
+  background-position: center;
+  height: 250px;
+  padding:15px;
+  
+}
+
+
+
+
+#boladefuego{
+  position: relative;
+  animation-name: meteoro;
+  animation-duration: 5s;
+ animation-iteration-count:infinite;
+}
+
+
+@keyframes meteoro {
+  0%{left: 100vw}
+  100%{left: 0vw }
+}
+
+
+ul {list-style-type: none;}
+
+.month {
+  padding: 70px 25px;
+  width: 100%;
+  background: #000000;
+  background-image: url("calendario-png.webp");
+  text-align: center;
+}
+
+.month ul {
+  margin: 0;
+  padding: 0;
+}
+
+.month ul li {
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.month .prev {
+  float: left;
+  padding-top: 10px;
+}
+
+.month .next {
+  float: right;
+  padding-top: 10px;
+}
+
+.weekdays {
+  margin: 0;
+  padding: 10px 0;
+  background-color: #ddd;
+}
+
+.weekdays li {
+  display: inline-block;
+  width: 13.6%;
+  color: #666;
+  text-align: center;
+}
+
+.days {
+  padding: 10px 0;
+  background: #eee;
+  margin: 0;
+}
+
+.days li {
+  list-style-type: none;
+  display: inline-block;
+  width: 13.6%;
+  text-align: center;
+  margin-bottom: 5px;
+  font-size:12px;
+  color: #777;
+}
+
+.days li .active {
+  padding: 5px;
+  background: #1abc9c;
+  color: white !important
+}
+
+/* Add media queries for smaller screens */
+@media screen and (max-width:720px) {
+  .weekdays li, .days li {width: 13.1%;}
+}
+
+@media screen and (max-width: 420px) {
+  .weekdays li, .days li {width: 12.5%;}
+  .days li .active {padding: 2px;}
+}
+
+@media screen and (max-width: 290px) {
+  .weekdays li, .days li {width: 12.2%;}
+}
