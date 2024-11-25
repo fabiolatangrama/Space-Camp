@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="icon" href="logo.png" type="image/x-icon">
+  <title>Space Camp 2024</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Danfo&family=Fuzzy+Bubbles:wght@400;700&family=Jaro:opsz@6..72&family=Monsieur+La+Doulaise&family=Protest+Strike&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+  <style>
+    /* Aseguramos que las cards estén alineadas */
+    .carousel-item {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+    }
+    .card {
+      flex: 0 0 18%; /* Cada card ocupa ~18% del ancho (5 visibles) */
+      text-align: center;
+    }
+    .card img {
+      height: 350px;
+      object-fit: cover;
+      border-radius: 8px 8px 0 0;
+    }
+     /* Asegura que el video cubra todo el fondo */
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      overflow: auto;
+    }
+
+    video {
+      position: fixed; /* Se mantiene como fondo fijo */
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+    .container {
+      position: relative;
+      z-index: 1;
+      color: white;
+      text-align: center;
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    h5, p { 
+      font-family: "Jaro", sans-serif;
+      color: black; text-align: center;
+      font-size: 3.5vh;
+    }
+    h1{
+      font-family: "Jaro", sans-serif;
+      font-size: 20vh;
+    }
+    .card {
+  flex: 0 0 18%;
+  text-align: center;
+  border: none; /* Quita el borde */
+  box-shadow: none; /* Opcional: Quita sombra si existe */
+  cursor: pointer; /* Muestra el cursor de "clickeable" */
+}
+
+.card img {
+  border-radius: 8px 8px 0 0; /* Mantiene los bordes redondeados */
+}
+.card:hover {
+  transform: scale(1.05); /* Hace zoom al pasar el mouse */
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Agrega una sombra suave */
+}
+
+  </style>
+</head>
+<body>
+  <!-- Video de fondo -->
+  <video autoplay muted loop>
+    <source src="video_fondo.mp4" type="video/mp4">
+  </video>
+
+  <!-- Contenido encima del video -->
+  <div class="container mt-5">
+    <h1 class="text-center mb-4">Space Campers</h1>
+
+    <div class="row p-3 align-items-stretch">
+                                  <!-- Card 1 -->
+                                  <div class="col-md-2">
+                                      <div class="card h-100">
+                                        <a href="proyectos/alfonso/index.html" class="text-decoration-none" target="_blank">
+                                      <div class="position-relative">
+                                        
+                                        <img src="fotos/alfonso.jpeg" class="card-img-top rounded-0" alt="Imagen 1">
+                                      </div>
+                                          <div class="card-body">
+                                              <h5 class="card-title">Alfonso López Chow</h5>
+                                          </div>
+                                      </div>
+                                    </a>
+                                  </div>
+                                  <!-- Card 6 -->
+                                  <div class="col-md-2">
+                                      <div class="card h-100">
+                                        <a href="proyectos/felipe/index.html" class="text-decoration-none" target="_blank">
+                                      <div class="position-relative">
+                                       
+                                        <img src="fotos/felipe.jpeg" class="card-img-top rounded-0" alt="Imagen 1">
+                                      </div>
+                                          <div class="card-body">
+                                              <h5 class="card-title">Felipe Oviedo Rodríguez</h5>
+                                          </div>
+                                      </div>
+                                       </a>
+                                  </div>
+                                  <!-- Card 5 -->
+                                  <div class="col-md-2">
+                                      <div class="card h-100">
+                                         <a href="proyectos/jhangel/index.html" class="text-decoration-none" target="_blank">
+                                      <div class="position-relative">
+                                        <i class="fas fa-trophy fa-2x position-absolute" style="top: 10px; right: 10px; color: gold;"></i>
+                                        <img src="fotos/jhangel.jpeg" class="card-img-top rounded-0" alt="Imagen 1">
+  
+                                      </div>
+                                          <div class="card-body">
+                                              <h5 class="card-title">Jhángel Sánchez Ruiz </h5>
+                                          </div>
+                                      </div>
+                                    </a>
+                                  </div>
+                                  <!-- Card 6 -->
+                                  <div class="col-md-2">
+                                      <div class="card h-100">
+                                         <a href="proyectos/joel/index.html" class="text-decoration-none" target="_blank">
+                                      <div class="position-relative">
+                                        <i class="fas fa-trophy fa-2x position-absolute" style="top: 10px; right: 10px; color: gold;"></i>
+                                        <img src="fotos/joel.jpeg" class="card-img-top rounded-0" alt="Imagen 1">
+  
+                                      </div>
+                                          <div class="card-body">
+                                              <h5 class="card-title">Joel Navarro Coto</h5>
+                                          </div>
+                                      </div>
+                                      </a>
+                                  </div>
+                                   <!-- Card 3 -->
+                                  <div class="col-md-2">
+                                      <div class="card h-100">
+                                         <a href="proyectos/mariangel/index.html" class="text-decoration-none" target="_blank">
+                                      <div class="position-relative">
+                                        <img src="fotos/mariangel.jpeg" class="card-img-top rounded-0" alt="Imagen 1">
+                                      </div>
+                                          <div class="card-body">
+                                              <h5 class="card-title">Mariangel Mata Vásquez</h5>
+                                          </div>
+                                      </div>
+                                      </a>
+                                  </div>
+                                  <!-- Card 5 -->
+                                  <div class="col-md-2">
+                                      <div class="card h-100">
+                                         <a href="proyectos/mia/index.html" class="text-decoration-none" target="_blank">
+                                      <div class="position-relative">
+                                        <i class="fas fa-award fa-2x position-absolute" style="top: 10px; right: 10px; color: green;"></i>
+                                        <img src="fotos/mia.jpeg" class="card-img-top rounded-0" alt="Imagen 1">
+  
+                                      </div>
+                                          <div class="card-body">
+                                              <h5 class="card-title">Mia Urruela Moya </h5>
+                                          </div>
+                                      </div>
+                                    </a>
+                                  </div>                           
+    </div>
+    <div class="row p-3 align-items-stretch">
+                  <div class="col-md-2">
+                                      <div class="card h-100">
+                                         <a href="proyectos/nicolas/index.html" class="text-decoration-none" target="_blank">
+                                      <div class="position-relative">
+                                        <img src="fotos/nicolas.jpeg" class="card-img-top rounded-0" alt="Imagen 1">
+  
+                                      </div>
+                                          <div class="card-body">
+                                              <h5 class="card-title">Nicolás Meseguer Argüello</h5>
+                                          </div>
+                                      </div>
+                                      </a>
+                                  </div>
+                                  <!-- Card 3 -->
+                                  <div class="col-md-2">
+                                      <div class="card h-100">
+                                         <a href="proyectos/santiagoespinoza/index.html" class="text-decoration-none" target="_blank">
+                                      <div class="position-relative">
+                                        <i class="fas fa-trophy fa-2x position-absolute" style="top: 10px; right: 10px; color: gold;"></i>
+                                        <img src="fotos/santiagoespinoza.jpeg" class="card-img-top rounded-0" alt="Imagen 1">
+                                      </div>
+                                          <div class="card-body">
+                                              <h5 class="card-title">Santiago Espinoza Molina</h5>
+                                          </div>
+                                      </div>
+                                      </a>
+                                  </div>
+    </div>
+<hr>
+    <div class="row p-3 align-items-stretch">
+      <!-- Card 2 -->
+                                  <div class="col-md-2">
+                                      <div class="card h-100">
+                                        <a href="proyectos/arianna/index.html" class="text-decoration-none" target="_blank">
+                                      <div class="position-relative">
+                                      
+                                        <img src="fotos/arianna.jpeg" class="card-img-top rounded-0" alt="Imagen 1">
+  
+                                       
+                                      </div>
+                                          <div class="card-body">
+                                              <h5 class="card-title">Arianna Oviedo</h5>
+                                          </div>
+                                      </div>
+                                       </a>
+                                  </div>
+                                  <!-- Card 3 -->
+                                  <div class="col-md-2">
+                                      <div class="card h-100">
+                                        <a href="proyectos/carolina/index.html" class="text-decoration-none" target="_blank">
+                                      <div class="position-relative">
+                                       <i class="fas fa-award fa-2x position-absolute" style="top: 10px; right: 10px; color: green;"></i>
+                                        <img src="fotos/carolina.jpeg" class="card-img-top rounded-0" alt="Imagen 1">
+                                      </div>
+                                          <div class="card-body">
+                                              <h5 class="card-title">Carolina Ramírez Reyes</h5>
+
+                                          </div>
+                                      </div>
+                                       </a>
+                                  </div>
+                                  <!-- Card 4 -->
+                                  <div class="col-md-2">
+                                      <div class="card h-100">
+                                        <a href="proyectos/dylan/index.html" class="text-decoration-none" target="_blank">
+                                      <div class="position-relative">
+                                       
+                                        <img src="fotos/dylan.jpeg" class="card-img-top rounded-0" alt="Imagen 1">
+                                      </div>
+                                          <div class="card-body">
+                                              <h5 class="card-title">Dylan Miranda Méndez</h5>
+                                          </div>
+                                      </div>
+                                       </a>
+                                  </div>
+                                  <!-- Card 5 -->
+                                  <div class="col-md-2">
+                                      <div class="card h-100">
+                                        <a href="proyectos/emiliano/index.html" class="text-decoration-none" target="_blank">
+                                      <div class="position-relative">
+                                      
+                                        <img src="fotos/emiliano.jpeg" class="card-img-top rounded-0" alt="Imagen 1">
+
+                                      </div>
+                                          <div class="card-body">
+                                              <h5 class="card-title">Emiliano Cerdas Sandoval</h5>
+                                          </div>
+                                      </div>
+                                       </a>
+                                  </div>
+                                  <!-- Card 1 -->
+                                  <div class="col-md-2">
+                                      <div class="card h-100">
+                                         <a href="proyectos/fernando/index.html" class="text-decoration-none" target="_blank">
+                                      <div class="position-relative">
+                                        <img src="fotos/fernando.jpeg" class="card-img-top rounded-0" alt="Imagen 1">
+                                      </div>
+                                          
+                                          <div class="card-body">
+                                              <h5 class="card-title">Fernando Córdoba Quesada</h5>
+                                          </div>
+                                      </div>
+                                      </a>
+                                  </div>
+                                  <!-- Card 2 -->
+                                  <div class="col-md-2">
+                                      <div class="card h-100">
+                                         <a href="proyectos/francisco/index.html" class="text-decoration-none" target="_blank">
+                                      <div class="position-relative">
+                                       
+                                        <img src="fotos/francisco.jpeg" class="card-img-top rounded-0" alt="Imagen 1">
+                                      </div>
+                                          <div class="card-body">
+                                              <h5 class="card-title">Francisco Ramirez Gonzalez</h5>
+                                          </div>
+                                      </div>
+                                      </a>
+                                  </div>
+                                  
+                                  
+    </div>
+    
+    <div class="row p-3 align-items-stretch">
+      <!-- Card 3 -->
+                                  <div class="col-md-2">
+                                      <div class="card h-100">
+                                         <a href="proyectos/gabriela/index.html" class="text-decoration-none" target="_blank">
+                                      <div class="position-relative">
+                                        <img src="fotos/gabriela.jpeg" class="card-img-top rounded-0" alt="Imagen 1">
+                                      </div>
+                                          <div class="card-body">
+                                              <h5 class="card-title">Gabriela Sanchez Reyes </h5>
+                                          </div>
+                                      </div>
+                                      </a>
+                                  </div>
+                                  <!-- Card 4 -->
+                                  <div class="col-md-2">
+                                      <div class="card h-100">
+                                         <a href="proyectos/gerald/index.html" class="text-decoration-none" target="_blank">
+                                      <div class="position-relative">
+                                        <img src="fotos/gerald.jpeg" class="card-img-top rounded-0" alt="Imagen 1">
+                                       
+                                      </div>
+                                          <div class="card-body">
+                                              <h5 class="card-title">Gerald Rodríguez </h5>
+                                          </div>
+                                      </div>
+                                      </a>
+                                  </div>
+                                  <!-- Card 1 -->
+                                  <div class="col-md-2 ">
+                                      <div class="card h-100">
+                                         <a href="proyectos/julian/index.html" class="text-decoration-none" target="_blank">
+                                      <div class="position-relative">
+                                        <img src="fotos/julian.jpeg" class="card-img-top rounded-0" alt="Imagen 1">
+                                      </div>
+                                          
+                                          <div class="card-body">
+                                              <h5 class="card-title">Julian Quesada</h5>
+                                          </div>
+                                      </div>
+                                      </a>
+                                  </div>
+                                  <!-- Card 2 -->
+                                  <div class="col-md-2">
+                                      <div class="card h-100">
+                                         <a href="proyectos/marco/index.html" class="text-decoration-none" target="_blank">
+                                      <div class="position-relative">
+                                       
+                                        <img src="fotos/marco.jpeg" class="card-img-top rounded-0" alt="Imagen 1">
+                                      </div>
+                                          <div class="card-body">
+                                              <h5 class="card-title">Marco Altamura Morera </h5>
+                                          </div>
+                                      </div>
+                                      </a>
+                                  </div>
+                                 
+                                  <!-- Card 4 -->
+                                  <div class="col-md-2">
+                                      <div class="card h-100">
+                                         <a href="proyectos/mateo/index.html" class="text-decoration-none" target="_blank">
+                                      <div class="position-relative">
+                                        <img src="fotos/mateo.jpeg" class="card-img-top rounded-0" alt="Imagen 1">
+                                       
+                                      </div>
+                                          <div class="card-body">
+                                              <h5 class="card-title">Mateo Madrigal Ramírez</h5>
+                                          </div>
+                                      </div>
+                                      </a>
+                                  </div>
+                                  <!-- Card 1 -->
+                                  <div class="col-md-2 ">
+                                      <div class="card h-100">
+                                         <a href="proyectos/nicole/index.html" class="text-decoration-none" target="_blank">
+                                      <div class="position-relative">
+                                        <i class="fas fa-trophy fa-2x position-absolute" style="top: 10px; right: 10px; color: gold;"></i>
+                                        <img src="fotos/nicole.jpeg" class="card-img-top rounded-0" alt="Imagen 1">
+                                      </div>
+                                          
+                                          <div class="card-body">
+                                              <h5 class="card-title">Nicole Vásquez Bolaños</h5>
+                                          </div>
+                                      </div>
+                                      </a>
+                                  </div>
+                                  
+                                  
+    </div>
+    <div class="row p-3 align-items-stretch">
+                                  
+                                  <!-- Card 2 -->
+                                  <div class="col-md-2">
+                                      <div class="card h-100">
+                                         <a href="proyectos/rebeca/index.html" class="text-decoration-none" target="_blank">
+                                      <div class="position-relative">
+                                       
+                                        <img src="fotos/rebeca.jpeg" class="card-img-top rounded-0" alt="Imagen 1">
+                                      </div>
+                                          <div class="card-body">
+                                              <h5 class="card-title">Rebeca Villalta Fallas</h5>
+                                          </div>
+                                      </div>
+                                      </a>
+                                  </div>
+                                  
+                                  <!-- Card 4 -->
+                                  <div class="col-md-2">
+                                      <div class="card h-100">
+                                         <a href="proyectos/santiagotorres/index.html" class="text-decoration-none" target="_blank">
+                                      <div class="position-relative">
+                                        <img src="fotos/santiagotorres.jpeg" class="card-img-top rounded-0" alt="Imagen 1">
+                                       
+                                      </div>
+                                          <div class="card-body">
+                                              <h5 class="card-title">Santiago Torres Mainieri</h5>
+                                          </div>
+                                      </div>
+                                      </a>
+                                  </div>
+                                  <!-- Card 5 -->
+                                  <div class="col-md-2">
+                                      <div class="card h-100">
+                                         <a href="proyectos/sebastiancarpio/index.html" class="text-decoration-none" target="_blank">
+                                      <div class="position-relative">
+                                        <i class="fas fa-trophy fa-2x position-absolute" style="top: 10px; right: 10px; color: gold;"></i>
+                                        <img src="fotos/sebastiancarpio.jpeg" class="card-img-top rounded-0" alt="Imagen 1">
+  
+                                      </div>
+                                          <div class="card-body">
+                                              <h5 class="card-title">Sebastián Carpio</h5>
+                                          </div>
+                                      </div>
+                                    </a>
+                                  </div>
+                                  <!-- Card 6 -->
+                                  <div class="col-md-2">
+                                      <div class="card h-100">
+                                         <a href="proyectos/sebastiancastro/index.html" class="text-decoration-none" target="_blank">
+                                      <div class="position-relative">
+                                        <img src="fotos/sebastiancastro.jpeg" class="card-img-top rounded-0" alt="Imagen 1">
+  
+                                      </div>
+                                          <div class="card-body">
+                                              <h5 class="card-title">Sebastián Castro</h5>
+                                          </div>
+                                      </div>
+                                      </a>
+                                  </div>
+                                   <!-- Card 1 -->
+                                  <div class="col-md-2 ">
+                                      <div class="card h-100">
+                                         <a href="proyectos/valentina/index.html" class="text-decoration-none" target="_blank">
+                                      <div class="position-relative">
+                                        <img src="fotos/valentina.jpeg" class="card-img-top rounded-0" alt="Imagen 1">
+                                      </div>
+                                          
+                                          <div class="card-body">
+                                              <h5 class="card-title">Valentina Sanabria Cortes </h5>
+                                          </div>
+                                      </div>
+                                      </a>
+                                  </div>
+    </div>
+
+
+</div>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
