@@ -1,0 +1,114 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+#titulo {
+  background-image: url("img/galaxia.jpeg");
+  background-position: 15% 70%;
+
+}
+
+h1 {
+  color: white;
+  font-size: 70px;
+  text-align: center;
+  font-family: Anton SC;
+
+}
+
+h2 {
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  font-family: Arsenal SC;
+}
+
+table {
+  border: 5px solid #7AA5CA;
+  background-color: black;
+  font-family: Arsenal SC;
+  cursor: not-allowed;
+  border-spacing: 0px;
+  font-size:12px ;
+  border-collapse: separate;
+  text-align: center;
+}
+thead {
+  background-color: #7AA5CA;;
+  color: white;
+  font-size: 20px;
+}
+
+tbody {
+  color: white;
+  font-size: 12px;
+}
+
+td {
+  border: 2px solid #7AA5CA;;
+  padding: 10px;
+}
+
+tfoot {
+  color: white;
+  font-size: 12px;
+}
+
+#cohete {
+  transform: rotate(45deg);
+  position: relative;
+  animation-name: mover;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes mover{
+  0%{
+    left: 0;
+  }
+  100%{
+    left: 100vw;
+
+  }
+}
+
+#foto1 {
+  width: 40%;
+  float: left;
+}
+
+#txt1 {
+  width: 50%;
+  float: left;
+}
+
+#subtitulo {
+  color: black;
+  font-size: 15px;
+  text-align: center;
+  font-family: Anton SC;
+}
+
+#texto1 {
+  color: black;
+  font-size: 13px;
+  text-align: center;
+  font-family: Arsenal SC;
+}
+
+h5 {
+  color: black;
+  font-size: 60px;
+  text-align: center;
+  font-family: Anton SC;
+}
+
+
+h3 {
+  text-align: left;
+  font-family: Anton SC;
+}
+
+
+
+

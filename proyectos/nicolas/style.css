@@ -1,0 +1,47 @@
+h1 {
+  color:#383838 ;
+  font-family: Comic sans ms;
+  font-size: 50px;
+  animation-name: hola;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  
+}
+
+#div1 {
+  background-image: url("wasawasa.jpg");
+  padding: 10px;
+  text-align: center;
+  outline-style: ridge;
+  outline-width: 10px;
+}
+
+h2 {
+  color:#000000 ;
+  font-family: Comic sans ms;
+  font-size: 40px;
+}
+table, th, td{
+  border: 10px ridge black;
+  border-collapse: collapse;
+  text-align: center;
+  padding: 10px;
+ 
+}
+
+
+@keyframes hola{
+  0%{
+    color: #383838;
+  }
+  50%{
+    color: #6600ff;
+  }
+  100%{
+    color: #004cff;
+  }
+}
+@keyframes hola2{
+  0%{left: 0vw;}
+  100%{left: 100vw;}
+}

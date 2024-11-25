@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Danfo&family=Fuzzy+Bubbles:wght@400;700&family=Monsieur+La+Doulaise&family=Protest+Strike&family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: 'Monsieur La Doulaise', cursive !important;
+}
+
+h1 {
+  font-family: 'Fuzzy Bubbles';
+  color: #b469f2;
+  text-align: center;
+  font-size: 70px;
+  line-height: 0;
+}
+
+h2 {
+  font-family: 'Fuzzy Bubbles';
+  color: #c360f0;
+  text-align: center;
+}
+
+p {
+  color: #d538f5;
+  text-align: center;
+  font-size: 45px;
+}
+
+li {
+  color: pink;
+  text-decoration-line: underline;
+}
+
+a {
+  color: red;
+  text-decoration: none;
+  text-shadow: 1px 2px blue;
+}
+
+
+
+#titulo {
+  /*background-image: linear-gradient(#f988b3, #c489f3);*/
+  background-image: url("friends.jpg");
+  background-size: cover;
+  padding: 25px;
+}
+
+#contenido1 {
+  background-color: #d5c9ed;
+  display: table;
+}
+
+#col1 {
+  width: 50%;
+  float: left;
+}
+
+#col2 {
+  width: 50%;
+  float: left;
+}
+
+
+
+
+#cohete {
+  transform: rotate(45deg);
+  position: relative;
+  animation-name: mover;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes mover {
+  0% {
+    left: 0;
+    top: 0;
+  }
+
+  100% {
+    left: 100vw;
+    top: 50px;
+
+  }
+}
+
+table {
+  border: 10px solid #b646be;
+  background-color: #f5d6f1;
+  cursor: pointer;
+  border-spacing: 20px;
+  font-size: 20px;
+  border-collapse: separate;
+}
+
+td {
+  border: 1px solid #ec65c8;
+  padding: 10px;
+}
+
+thead {
+  font-size: 30;
+  color: #f41abe;
+}
+
+tfoot {
+  font-size: 17x;
+
+}
+
+ul {
+  list-style-type: none;
+}
+
+.month {
+  padding: 70px 25px;
+  width: 100%;
+  background: #1a7ebc;
+  text-align: center;
+}
+
+.month ul {
+  margin: 0;
+  padding: 0;
+}
+
+.month ul li {
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.month .prev {
+  float: left;
+  padding-top: 10px;
+}
+
+.month .next {
+  float: right;
+  padding-top: 10px;
+}
+
+.weekdays {
+  margin: 0;
+  padding: 10px 0;
+  background-color: #ddd;
+}
+
+.weekdays li {
+  display: inline-block;
+  width: 13.6%;
+  color: #666;
+  text-align: center;
+}
+
+.days {
+  padding: 10px 0;
+  background: #eee;
+  margin: 0;
+}
+
+.days li {
+  list-style-type: none;
+  display: inline-block;
+  width: 13.6%;
+  text-align: center;
+  margin-bottom: 5px;
+  font-size: 12px;
+  color: #777;
+}
+
+.days li .active {
+  padding: 5px;
+  background: #1abc9c;
+  color: white !important
+}
+
+/* Add media queries for smaller screens */
+@media screen and (max-width:720px) {
+
+  .weekdays li,
+  .days li {
+    width: 13.1%;
+  }
+}
+
+@media screen and (max-width: 420px) {
+
+  .weekdays li,
+  .days li {
+    width: 12.5%;
+  }
+
+  .days li .active {
+    padding: 2px;
+  }
+}
+
+@media screen and (max-width: 290px) {
+
+  .weekdays li,
+  .days li {
+    width: 12.2%;
+  }
+}
+
+
+
+label {
+  color: #7a3e6a;
+  font-size: 20px;
+}

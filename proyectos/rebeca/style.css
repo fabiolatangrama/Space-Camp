@@ -1,0 +1,118 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: Grandstander;
+  font-size: 50px;
+  line-height: 0;
+}
+
+h2 {
+  color: white;
+  text-align: center;
+  font-family: Grandstander;
+}
+
+h3{
+  font-family: Grandstander;
+  text-align: center;
+}
+p {
+  color: black;
+   text-align: center;
+}
+
+li {
+  color: pink;
+  text-decoration-line: underline;
+}
+
+a {
+  color: red;
+  text-decoration: none;
+  text-shadow: 1px 2px blue;
+}
+
+
+
+#titulo{
+  /*background-image: linear-gradient(#f988b3, #c489f3);*/
+  background-image: url("space1.jpg");
+  background-size: cover;
+  padding: 25px;
+}
+
+#contenido1{
+  background-color: #f1f1f5;
+  display: table;
+  width: 100vw;
+}
+#col1{
+  width: 50%;
+  float: left;
+}
+#col2{
+  width: 50%;
+  float: left;
+}
+
+
+#space(1).png {
+  transform: rotate(45deg);
+  position: relative;
+  animation-name: mover;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes mover{
+  0%{
+    left: 0;
+    top: 0;
+  }
+  100%{
+    left: 100vw;
+    top: 50px;
+
+  }
+}
+
+
+table {
+  border: 5px solid #7AA5CA;
+  background-color: black;
+  font-family: Arsenal SC;
+  cursor: not-allowed;
+  border-spacing: 0px;
+  font-size:12px ;
+  border-collapse: separate;
+  width: 100vw;
+}
+thead {
+  background-color: #7AA5CA;;
+  color: white;
+  font-size: 20px;
+}
+
+tbody {
+  color: white;
+  font-size: 12px;
+}
+
+td {
+  border: 2px solid #7AA5CA;;
+  padding: 10px;
+}
+
+tfoot {
+  color: white;
+  font-size: 12px;
+}
+
+
+
